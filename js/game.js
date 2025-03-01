@@ -68,7 +68,7 @@ class GameScene extends Phaser.Scene {
 
     criarTelaJogo() {
         // Interface do Jogo
-        this.add.text(20, 20, `Matéria: ${this.materiaSelecionada}`, {
+        this.add.text(20, 20, `${this.materiaSelecionada}`, {
             fontFamily: config.fontFamily,
             fontSize: '24px',
             color: '#fff'
