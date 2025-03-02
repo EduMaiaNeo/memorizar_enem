@@ -9,7 +9,7 @@ function obterDadosDoGoogleSheets(spreadsheetId, sheetName, materia) {
         .then(response => response.json())
         .then(data => {
             const values = data.values;
-            if (values.length > 1) {
+            if (values && values.length > 1) {
                 const header = values[0];
                 const rows = values.slice(1);
 
